@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Liste de courses</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body onLoad="javascript: displayList()">
+    
+    <h1>Liste de courses</h1>
+    <h3 id='nombreProduits'></h3>
+    <hr>
+  
+    <button class='add' onClick="javascript: addItem()">+ Ajouter un produit</button>
+    <button class='delete' onClick="javascript: removeItem()">- Supprimer un produit</button>
+    <button class='clear' onClick="javascript: clearList()">Vider ma liste de courses</button>
+    <div id='superList'></div>
+  
+  </body>
+</html>
