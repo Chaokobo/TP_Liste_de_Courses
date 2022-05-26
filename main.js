@@ -29,6 +29,16 @@ function removeItem(itemName)
   displayList();
 }
 
+// Fonction qui supprime un produit de la liste grâce à un bouton à côté du produit
+function removeItemButton(itemName)
+{
+  var index = Courses.indexOf(itemName);
+  Courses.splice(index, 1);
+  console.log("l'élément " + itemName + " a été supprimé");
+  showTotalItems();
+  displayList();
+}
+
 // Fonction qui affiche la liste des courses
 function displayList()
 {
@@ -46,7 +56,7 @@ function displayList()
     var html = "<ul>";
     for (var i = 0; i < Courses.length; i++)
     {
-      html += '<li>● ' + Courses[i] + '</li>';
+      html += '<li><button title="supprimer" onClick="javascript: removeItemButton(\'' + Courses[i] + '\')" class="deleteButton" id="' + i + '">Supprimer</button>' + Courses[i] + '</li>';
     }
     html += '</ul>';
     divSuperList.innerHTML = html;

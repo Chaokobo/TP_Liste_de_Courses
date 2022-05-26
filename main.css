@@ -1,67 +1,108 @@
-button:hover
-  {
-    cursor: pointer;
-    opacity: 1;
-  }
-  
-  h1, hr
-  {
-    font-family: "Century Gothic";
-    color: rgb(96, 102, 109);
-  }
-  
-  h3
-  {
-    font-family: "Century Gothic";
-    opacity: 0.85;
-  }
-  
-  hr
-  {
-    opacity: 0.1;
-  }
-  
-  li
-  {
-    background: rgba(0, 0, 0, 0.02);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    list-style: none;
-    font-family: "Century Gothic";
-    color: rgba(0, 0, 0, 0.77);
-    transition: background-color 0.2s ease-out;
-    -moz-transition: background-color 0.2s ease-out;
-    -webkit-transition: background-color 0.2s ease-out;
-    -o-transition: background-color 0.2s ease-out;
-    text-align: left;
-    height: 43px;
-    line-height: 43px;
-    font-weight: bold;
-  }
+body 
+{
+  text-align: center;
+}
 
-  .add, .delete, .clear
-  {
-    font-family: "Century Gothic";
-  }
+button 
+{
+  border: none;
+  width: 250px;
+  background: #434851;
+  border-color: #489615 #6ea031 #6ea031;
+  border-radius: 3px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 -4px rgba(0, 0, 0, 0.1) inset;
+  color: #ffffff;
+  padding: 8px;
+  font-size: 1.1em;
+  font-family: "Century Gothic";
+  opacity: 0.85;
+  margin-right: 11px;
+  margin-bottom: 11px;
+}
+
+.add 
+{
+  background: #2F374F;
+}
+
+.deleteButton 
+{
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+  color: #aa0b0e;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 0.4em;
+  width: auto;
+  margin-bottom: 0;
+  border-radius: none;
+  text-decoration: underline;
+}
+
+button:hover
+{
+  cursor: pointer;
+  opacity: 1;
+}
   
-  li:nth-child(odd)
-  {
-    background: rgba(0, 0, 0, 0.05);
-  }
+h1, hr
+{
+  font-family: "Century Gothic";
+  color: rgb(96, 102, 109);
+}
   
-  li:hover
-  {
-    background: #fafbfc;
-  }
+h3
+{
+  font-family: "Century Gothic";
+  opacity: 0.85;
+}
+ 
+hr
+{
+  opacity: 0.1;
+}
   
-  #superList
-  {
-    background: #e7e9ea;
-    padding: 15px;
-  }
+li
+{
+  background: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  list-style: none;
+  font-family: "Century Gothic";
+  color: rgba(0, 0, 0, 0.77);
+  transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -webkit-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  text-align: left;
+  height: 43px;
+  line-height: 43px;
+  font-weight: bold;
+}
+
+.add, .delete, .clear
+{
+  font-family: "Century Gothic";
+}
   
-  ul
-  {
-    padding: 0;
-    margin: 0;
-  }
+li:nth-child(odd)
+{
+  background: rgba(0, 0, 0, 0.05);
+}
+  
+li:hover
+{
+  background: #fafbfc;
+}
+  
+#superList
+{
+  background: #e7e9ea;
+  padding: 15px;
+}
+  
+ul
+{
+  padding: 0;
+  margin: 0;
+}
